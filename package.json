@@ -1,0 +1,21 @@
+{
+  "name": "fedback-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "npm start --prefix client",
+    "start": "cd backend && node server.js",
+    "server": "cd backend && nodemon server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install": "concurrently \"npm install\" \"npm install\""
+  },
+  "author": "Rene Gutierrez",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.19.0"
+  }
+}
